@@ -2,3 +2,17 @@ body{
     background-color: #FFF95F;
     color: black;
 }
+h2{
+    color: #EF0009;
+}
+.create-forms{
+    display: block;
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+}
+.submit{
+    margin: 20px 10px 0 20px;
+    border-radius: 25px;
+    /* margin-left: 55px; */
+}
