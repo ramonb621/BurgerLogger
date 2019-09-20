@@ -18,13 +18,32 @@ $(function(){
             }
         );
     });
+
+    devour = function(){
+        if (document.burgerForm.burger_name.value == ''){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
     $(".create-form").on("submit", function(event){
         event.preventDefault();
         
         var newBurger = {
-            buger_name: $("#bg").val().trim(),
-            devoured: $("[name = devoured]")
-        }
-    })
+            burger_name: $("#bg").val().trim(),
+            devoured: devour()
+        };
+        
+        $.ajax("api/burgers/", {
+            type:"POST",
+            data: newBurger
+        }).then(
+            function(){
+                console.log("You made a new burger!");
+                location.reload();
+            }
+        );
+    });
 
 })
