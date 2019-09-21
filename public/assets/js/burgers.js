@@ -1,12 +1,20 @@
 $(function(){
     $(".change-devour").on("click", function(event){
         var id = $(this).data("id");
-        var newDevour = $(this).data("newDevour");
+        var newDevour = $(this).data("newdevour");
+
+        // newDevour = function(newDevour){
+        //     if(devour() === false){
+        //         return true;
+        //     }else{
+        //         return false;
+        //     }
+        // }
 
         var newDevourState = {
             devoured: newDevour
         };
-
+        console.log(newDevourState);
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: newDevourState
@@ -19,13 +27,6 @@ $(function(){
         );
     });
 
-    devour = function(){
-        if (document.burgerForm.burger_name.value == ''){
-            return 1;
-        }else{
-            return 0;
-        }
-    }
 
     $(".create-form").on("submit", function(event){
         event.preventDefault();
@@ -45,5 +46,13 @@ $(function(){
             }
         );
     });
+
+    devour = function(){
+        if (document.burgerForm.burger_name.value == ''){
+            return 1;
+        }else{
+            return 0;
+        }
+    };
 
 })
