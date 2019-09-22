@@ -9,6 +9,7 @@ body{
 }
 h1{
     font-size: 58pt;
+    top: 0;
 }
 h2{
     color: #EF0009;
@@ -18,7 +19,7 @@ h2{
 h1, h2, .create-forms{
     display: block;
     width: 50%;
-    margin: 40px auto;
+    margin: 20px auto;
     text-align: center;
 }
 ul, ol{
@@ -39,6 +40,12 @@ ul, ol{
     position: relative;
     margin-left: 70%;
 }
-/* [data-newdevour="false"]{
+.burger{
+    display: block;
+    position: relative;
+    margin: auto ;
+    top: 50px;
+}
+[data-newdevour="false"]{
     display: none;
-} */
+}
