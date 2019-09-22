@@ -3,13 +3,6 @@ $(function(){
         var id = $(this).data("id");
         var newDevour = $(this).data("newdevour");
 
-        // newDevour = function(newDevour){
-        //     if(devour() === false){
-        //         return true;
-        //     }else{
-        //         return false;
-        //     }
-        // }
 
         var newDevourState = {
             devoured: newDevour

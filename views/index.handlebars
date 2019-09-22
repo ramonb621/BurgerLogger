@@ -2,22 +2,22 @@
 
 <h2>Eat Some...</h2>
 
-<ul>
+<ol class="noteaten">
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
-</ul>
+</ol>
 
 
-<ul>
+<ol class="eaten">
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=false}}
     {{/if}}
   {{/each}}
-</ul>
+</ol>
 
 <div class="create-forms">
 <h3>Make a Burger</h3>
