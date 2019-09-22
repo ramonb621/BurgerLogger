@@ -5,31 +5,25 @@ body{
 h2{
     color: #EF0009;
 }
-/* ul{
-    display: block;
-    width: 50%;
-} */
 h1, h2, .create-forms{
     display: block;
     width: 50%;
-    margin: 10% auto;
+    margin: 40px auto;
     text-align: center;
 }
+ul, ol{
+    padding: 0;
+}
 .change-devour, .submit{
-    margin: 20px 20px 0 20px;
+    margin: 20px 0 0 20px;
     border-radius: 25px;
     font-weight: bold;
 }
-/* ol{
-    display: inline-block;
-    width: 50%;
-    margin: auto 50%;
-} */
 .noteaten{
     position: relative;
-    margin-left: 25%;
+    margin-left: 10%;
 }
 .eaten, .change-devour:active::after{
     position: relative;
-    margin-left: 50%;
+    margin-left: 70%;
 }
