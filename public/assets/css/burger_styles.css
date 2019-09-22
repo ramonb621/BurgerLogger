@@ -1,9 +1,19 @@
+/* font-family: 'Satisfy', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Ravi Prakash', cursive; */
 body{
     background-color: #FFF95F;
     color: black;
+    font-family: 'Ravi Prakash', cursive;
+    font-size: 16pt;
+}
+h1{
+    font-size: 58pt;
 }
 h2{
     color: #EF0009;
+    font-family: 'Satisfy', cursive;
+    font-size: 30pt;
 }
 h1, h2, .create-forms{
     display: block;
@@ -18,6 +28,8 @@ ul, ol{
     margin: 20px 0 0 20px;
     border-radius: 25px;
     font-weight: bold;
+    font-family: 'Concert One', cursive;
+    font-size: 12pt;
 }
 .noteaten{
     position: relative;
@@ -27,3 +39,6 @@ ul, ol{
     position: relative;
     margin-left: 70%;
 }
+/* [data-newdevour="false"]{
+    display: none;
+} */
